@@ -85,3 +85,6 @@ fp-info-cache
 /.\*/
 /old
 *.DS_Store
+.history/
+~*.lck
+
