@@ -973,7 +973,7 @@
         "uuid": "060e7195-8501-4e09-8c43-1c823c24812a"
       }
     ],
-    "used_designators": "JP3-4,#PWR12-13,J2,D5-18,D22-30",
+    "used_designators": "JP3-4,#PWR12-13,J2,J7,D5-18,D22-30",
     "variants": []
   },
   "sheets": [

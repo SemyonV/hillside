@@ -14,7 +14,7 @@
 		(comment 4 "A choc-spaced split keyboard with Ferris column stagger but more thumb and pinky keys.")
 	)
 	(lib_symbols
-		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
+		(symbol "Connector:USB_C_Receptacle_PowerOnly_6P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -24,27 +24,29 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 22.225 0)
+				(at 0 16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 19.685 0)
+			(property "Value" "USB_C_Receptacle_PowerOnly_6P"
+				(at 0 13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 				)
 			)
 			(property "Footprint" ""
-				(at 3.81 0 0)
+				(at 3.81 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -55,17 +57,6 @@
 				)
 			)
 			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-				(at 3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -76,7 +67,18 @@
 					)
 				)
 			)
-			(property "ki_keywords" "usb universal serial bus type-C USB2.0"
+			(property "Description" "USB Power-Only 6P Type-C Receptacle connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "usb universal serial bus type-C power-only charging-only 6P 6C"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -98,32 +100,10 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
+			(symbol "USB_C_Receptacle_PowerOnly_6P_0_0"
 				(rectangle
-					(start -0.254 -17.78)
-					(end 0.254 -16.764)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 15.494)
-					(end 9.144 14.986)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 10.414)
-					(end 9.144 9.906)
+					(start -0.254 -12.7)
+					(end 0.254 -11.684)
 					(stroke
 						(width 0)
 						(type default)
@@ -144,39 +124,6 @@
 					)
 				)
 				(rectangle
-					(start 10.16 2.794)
-					(end 9.144 2.286)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 0.254)
-					(end 9.144 -0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 -2.286)
-					(end 9.144 -2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
 					(start 10.16 -4.826)
 					(end 9.144 -5.334)
 					(stroke
@@ -188,19 +135,8 @@
 					)
 				)
 				(rectangle
-					(start 10.16 -12.446)
-					(end 9.144 -12.954)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 -14.986)
-					(end 9.144 -15.494)
+					(start 10.16 -7.366)
+					(end 9.144 -7.874)
 					(stroke
 						(width 0)
 						(type default)
@@ -210,10 +146,10 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
+			(symbol "USB_C_Receptacle_PowerOnly_6P_0_1"
 				(rectangle
-					(start -10.16 17.78)
-					(end 10.16 -17.78)
+					(start -10.16 12.7)
+					(end 10.16 -12.7)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -224,7 +160,7 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -3.81) (xy -8.89 3.81)
+						(xy -8.89 -1.27) (xy -8.89 6.35)
 					)
 					(stroke
 						(width 0.508)
@@ -235,8 +171,8 @@
 					)
 				)
 				(rectangle
-					(start -7.62 -3.81)
-					(end -6.35 3.81)
+					(start -7.62 -1.27)
+					(end -6.35 6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -246,9 +182,9 @@
 					)
 				)
 				(arc
-					(start -7.62 3.81)
-					(mid -6.985 4.4423)
-					(end -6.35 3.81)
+					(start -7.62 6.35)
+					(mid -6.985 6.9823)
+					(end -6.35 6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -258,9 +194,9 @@
 					)
 				)
 				(arc
-					(start -7.62 3.81)
-					(mid -6.985 4.4423)
-					(end -6.35 3.81)
+					(start -7.62 6.35)
+					(mid -6.985 6.9823)
+					(end -6.35 6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -270,9 +206,9 @@
 					)
 				)
 				(arc
-					(start -8.89 3.81)
-					(mid -6.985 5.7067)
-					(end -5.08 3.81)
+					(start -8.89 6.35)
+					(mid -6.985 8.2467)
+					(end -5.08 6.35)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -282,9 +218,9 @@
 					)
 				)
 				(arc
-					(start -5.08 -3.81)
-					(mid -6.985 -5.7067)
-					(end -8.89 -3.81)
+					(start -5.08 -1.27)
+					(mid -6.985 -3.1667)
+					(end -8.89 -1.27)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -294,9 +230,9 @@
 					)
 				)
 				(arc
-					(start -6.35 -3.81)
-					(mid -6.985 -4.4423)
-					(end -7.62 -3.81)
+					(start -6.35 -1.27)
+					(mid -6.985 -1.9023)
+					(end -7.62 -1.27)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -306,9 +242,9 @@
 					)
 				)
 				(arc
-					(start -6.35 -3.81)
-					(mid -6.985 -4.4423)
-					(end -7.62 -3.81)
+					(start -6.35 -1.27)
+					(mid -6.985 -1.9023)
+					(end -7.62 -1.27)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -319,7 +255,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
+						(xy -5.08 6.35) (xy -5.08 -1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -330,7 +266,7 @@
 					)
 				)
 				(circle
-					(center -2.54 1.143)
+					(center -2.54 3.683)
 					(radius 0.635)
 					(stroke
 						(width 0.254)
@@ -342,7 +278,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
+						(xy -1.27 6.858) (xy 0 9.398) (xy 1.27 6.858) (xy -1.27 6.858)
 					)
 					(stroke
 						(width 0.254)
@@ -354,7 +290,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
+						(xy 0 0.508) (xy 2.54 3.048) (xy 2.54 4.318)
 					)
 					(stroke
 						(width 0.508)
@@ -366,7 +302,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.302) (xy -2.54 -0.762) (xy -2.54 0.508)
+						(xy 0 -0.762) (xy -2.54 1.778) (xy -2.54 3.048)
 					)
 					(stroke
 						(width 0.508)
@@ -378,7 +314,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -5.842) (xy 0 4.318)
+						(xy 0 -3.302) (xy 0 6.858)
 					)
 					(stroke
 						(width 0.508)
@@ -389,7 +325,7 @@
 					)
 				)
 				(circle
-					(center 0 -5.842)
+					(center 0 -3.302)
 					(radius 1.27)
 					(stroke
 						(width 0)
@@ -400,8 +336,8 @@
 					)
 				)
 				(rectangle
-					(start 1.905 1.778)
-					(end 3.175 3.048)
+					(start 1.905 4.318)
+					(end 3.175 5.588)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -411,45 +347,9 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "USB_C_Receptacle_PowerOnly_6P_1_1"
 				(pin bidirectional line
-					(at 15.24 10.16 180)
+					(at 15.24 -5.08 180)
 					(length 5.08)
 					(name "CC1"
 						(effects
@@ -466,64 +366,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -12.7 180)
-					(length 5.08)
-					(name "SBU1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
-					(at 15.24 15.24 180)
+					(at 15.24 7.62 180)
 					(length 5.08)
-					(hide yes)
 					(name "VBUS"
 						(effects
 							(font
@@ -540,9 +385,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
+					(at 0 -17.78 90)
 					(length 5.08)
-					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -558,46 +402,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08)
-					(hide yes)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
-					(at 15.24 7.62 180)
+					(at 15.24 -7.62 180)
 					(length 5.08)
 					(name "CC2"
 						(effects
@@ -614,62 +420,8 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 -5.08 180)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 0 180)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -15.24 180)
-					(length 5.08)
-					(name "SBU2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
-					(at 15.24 15.24 180)
+					(at 15.24 7.62 180)
 					(length 5.08)
 					(hide yes)
 					(name "VBUS"
@@ -688,7 +440,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
+					(at 0 -17.78 90)
 					(length 5.08)
 					(hide yes)
 					(name "GND"
@@ -707,7 +459,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -22.86 90)
+					(at -7.62 -17.78 90)
 					(length 5.08)
 					(name "SHIELD"
 						(effects
@@ -1982,268 +1734,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Jumper:SolderJumper_3_Open"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_3_Open"
-				(at 0 2.794 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Solder Jumper, 3-pole, open"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
-				(at 0 -17.78 0)
-				(show_name yes)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
-				(at 0 -20.32 0)
-				(show_name yes)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Solder Jumper SPDT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SolderJumper_3_Open_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.016) (xy -1.016 -1.016)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.016 -1.016)
-					(mid -2.0276 0)
-					(end -1.016 1.016)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -0.508 1.016)
-					(end 0.508 -1.016)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 1.016)
-					(mid 2.0276 0)
-					(end 1.016 -1.016)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 1.016 -1.016)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_3_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3974,93 +3464,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "hillside_basic:Bumpon"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 10.16 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Bumpon"
-				(at 1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "hillside:Bumpon"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Bumpon"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Bumpon_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "hillside_basic:Via"
 			(pin_numbers
 				(hide yes)
@@ -4444,17 +3847,6 @@
 		)
 		(uuid "8d61dc1d-e565-4dfd-8fcc-58ae114fbdc0")
 	)
-	(text "PCB Assembly"
-		(exclude_from_sim no)
-		(at 227.33 111.76 0)
-		(effects
-			(font
-				(size 1.78 1.78)
-			)
-			(justify left bottom)
-		)
-		(uuid "c0814abd-cd11-4ba5-8018-4c9d1cf0ad26")
-	)
 	(text "Stiching vias"
 		(exclude_from_sim no)
 		(at 233.68 36.83 0)
@@ -4465,17 +3857,6 @@
 			(justify left bottom)
 		)
 		(uuid "c74fc314-66d8-4de7-ba0f-a8d825b92c4d")
-	)
-	(text "Mounts under Board"
-		(exclude_from_sim no)
-		(at 232.41 79.375 0)
-		(effects
-			(font
-				(size 1.78 1.78)
-			)
-			(justify left bottom)
-		)
-		(uuid "fa0fd85b-5610-42fb-9c7b-77905ee396b1")
 	)
 	(text "Accessories"
 		(exclude_from_sim no)
@@ -4553,12 +3934,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f0a593a-f5d6-4037-a904-84b77fcf44ec")
-	)
-	(junction
-		(at 105.41 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4128f95b-212d-4d25-b659-39bf0fa42efa")
 	)
 	(junction
 		(at 243.84 40.64)
@@ -4645,22 +4020,10 @@
 		(uuid "8309d1c7-d633-424e-8284-4ef4724ee54c")
 	)
 	(junction
-		(at 106.68 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83760eb8-c507-482d-9dcb-cf487acec891")
-	)
-	(junction
 		(at 238.125 127.635)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86988a1c-729e-41fc-a1af-45f141dca1b0")
-	)
-	(junction
-		(at 101.6 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e8ad56e-c651-4434-b8e8-3df93d6a9e53")
 	)
 	(junction
 		(at 140.97 48.26)
@@ -4747,12 +4110,6 @@
 		(uuid "e75d6da0-3dd9-4b57-bfba-a040f629edd0")
 	)
 	(junction
-		(at 240.03 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb84e2f0-c873-4eb9-b0db-dd71bfafb64c")
-	)
-	(junction
 		(at 78.74 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4771,32 +4128,18 @@
 		(uuid "fb16793c-b98a-472c-90d3-3eff4b47d7ec")
 	)
 	(junction
-		(at 101.6 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd618ed7-c24f-4d2e-85df-6e1e19b6b5d0")
-	)
-	(junction
 		(at 184.15 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fea37a03-cfdf-49c9-bb73-d43548a57840")
 	)
 	(no_connect
-		(at 101.6 128.27)
-		(uuid "0114db7b-cc31-402a-bfb7-0938a53942f1")
+		(at 25.4 135.89)
+		(uuid "34af36a1-c5a5-4f26-bc2f-bee7cf0a2ea2")
 	)
 	(no_connect
 		(at 137.16 195.58)
 		(uuid "3cbbfb62-5db5-41da-a6ca-33bf869c52dc")
-	)
-	(no_connect
-		(at 101.6 151.13)
-		(uuid "5c0dbb41-084e-4742-99d4-760932fcd356")
-	)
-	(no_connect
-		(at 101.6 125.73)
-		(uuid "6822d237-c08d-47d2-8ade-e84f90575058")
 	)
 	(no_connect
 		(at 137.16 185.42)
@@ -4809,10 +4152,6 @@
 	(no_connect
 		(at 50.8 130.81)
 		(uuid "cc6d3b18-008e-41b0-a20e-6e85e5279efa")
-	)
-	(no_connect
-		(at 101.6 148.59)
-		(uuid "e2a589b6-1237-479b-aa5a-0935ffecbcb2")
 	)
 	(no_connect
 		(at 60.96 177.8)
@@ -4837,16 +4176,6 @@
 			(type default)
 		)
 		(uuid "03841d2e-21af-4e4e-970b-4119e94a5554")
-	)
-	(wire
-		(pts
-			(xy 101.6 140.97) (xy 105.41 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03bffd96-46fd-43e4-a4a4-5477afdae924")
 	)
 	(wire
 		(pts
@@ -4917,16 +4246,6 @@
 			(type default)
 		)
 		(uuid "119edae5-738a-4061-8d5f-68fd247d76f3")
-	)
-	(wire
-		(pts
-			(xy 114.3 132.08) (xy 121.92 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11c713e2-1a32-496a-ba97-6a9a62b9b9e6")
 	)
 	(wire
 		(pts
@@ -5048,16 +4367,6 @@
 		)
 		(uuid "2d7409c4-b4d6-4e9c-9b1e-7e83e6bab066")
 	)
-	(wire
-		(pts
-			(xy 101.6 133.35) (xy 101.6 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31d9142f-83af-439a-a659-d06ea58b2322")
-	)
 	(polyline
 		(pts
 			(xy 83.82 163.83) (xy 15.24 163.83)
@@ -5117,16 +4426,6 @@
 			(type default)
 		)
 		(uuid "3fd84676-c0dc-47ea-8930-0afc793ec874")
-	)
-	(wire
-		(pts
-			(xy 106.68 135.89) (xy 106.68 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "422239fe-d19b-4d23-824c-f67b17eebc70")
 	)
 	(wire
 		(pts
@@ -5210,16 +4509,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 128.27) (xy 109.22 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51b505e2-cd31-4395-a432-661ff9b2914f")
-	)
-	(wire
-		(pts
 			(xy 137.16 175.26) (xy 144.78 175.26)
 		)
 		(stroke
@@ -5247,16 +4536,6 @@
 			(type dash)
 		)
 		(uuid "5465c8e7-24bc-4bac-98f0-4dad9a4a1915")
-	)
-	(wire
-		(pts
-			(xy 119.38 140.97) (xy 121.92 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56629a05-75f9-4baa-8aed-a017bad46fef")
 	)
 	(polyline
 		(pts
@@ -5330,16 +4609,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 40.64) (xy 240.03 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6625bfe0-eaee-428a-b173-8f4ba881361a")
-	)
-	(wire
-		(pts
 			(xy 50.8 139.7) (xy 54.61 139.7)
 		)
 		(stroke
@@ -5347,16 +4616,6 @@
 			(type default)
 		)
 		(uuid "67915d8e-9bda-4d1f-a092-96ddbe2933a8")
-	)
-	(wire
-		(pts
-			(xy 106.68 135.89) (xy 110.49 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69aa3c70-e1e4-426b-aca4-6a01e019702e")
 	)
 	(wire
 		(pts
@@ -5377,16 +4636,6 @@
 			(type default)
 		)
 		(uuid "6bb40148-b2b4-4151-8383-efcbb9b93763")
-	)
-	(wire
-		(pts
-			(xy 114.3 144.78) (xy 121.92 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c9ba0b0-b92e-470a-b76f-f805598e3895")
 	)
 	(wire
 		(pts
@@ -5510,13 +4759,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 140.97) (xy 109.22 140.97)
+			(xy 99.06 139.7) (xy 99.06 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "92c65d76-1933-4a5f-93c2-fe64541bbcc2")
+		(uuid "93c7c9cc-af12-4aa1-8d37-241123c71375")
 	)
 	(wire
 		(pts
@@ -5680,16 +4929,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 135.89) (xy 106.68 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b647e320-b2d7-4348-8ed9-4dbc97b912a5")
-	)
-	(wire
-		(pts
 			(xy 119.38 62.23) (xy 133.35 62.23)
 		)
 		(stroke
@@ -5780,16 +5019,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 140.97) (xy 105.41 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbaf1247-90f3-4e27-8ae4-58e715cf9c38")
-	)
-	(wire
-		(pts
 			(xy 34.29 177.8) (xy 34.29 180.34)
 		)
 		(stroke
@@ -5797,16 +5026,6 @@
 			(type default)
 		)
 		(uuid "cc0f7c34-5cfc-4088-92ac-17e102c95a24")
-	)
-	(wire
-		(pts
-			(xy 101.6 138.43) (xy 101.6 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf4b7859-9b66-4586-9ac7-b7a81283b2dc")
 	)
 	(wire
 		(pts
@@ -5837,16 +5056,6 @@
 			(type dash)
 		)
 		(uuid "d7441a35-a575-4b68-a29c-7da991ed16fd")
-	)
-	(wire
-		(pts
-			(xy 119.38 128.27) (xy 121.92 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d894bae1-b995-40ed-a265-ba2bd9b80396")
 	)
 	(wire
 		(pts
@@ -5920,16 +5129,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 147.32) (xy 109.22 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e825aeb0-de5d-40e1-8428-83e5508591e3")
-	)
-	(wire
-		(pts
 			(xy 52.07 48.26) (xy 52.07 55.88)
 		)
 		(stroke
@@ -5960,7 +5159,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 40.64) (xy 243.84 40.64)
+			(xy 236.22 40.64) (xy 243.84 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6409,30 +5608,6 @@
 			)
 		)
 	)
-	(global_label "UART_B"
-		(shape bidirectional)
-		(at 109.22 147.32 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "53b5518c-d5f0-4e64-91fb-4ccdd20a5340")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.3978 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "row3"
 		(shape output)
 		(at 189.23 87.63 0)
@@ -6504,9 +5679,9 @@
 			)
 		)
 	)
-	(global_label "UART_A"
+	(global_label "data"
 		(shape bidirectional)
-		(at 110.49 135.89 0)
+		(at 99.06 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6514,9 +5689,9 @@
 			)
 			(justify left)
 		)
-		(uuid "66a5a186-e3fb-4ef8-97ef-644114c60209")
+		(uuid "65e3e4c9-b7ca-4923-a5bb-942c972fafe6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.4864 135.89 0)
+			(at 106.5162 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6643,54 +5818,6 @@
 			)
 		)
 	)
-	(global_label "TX"
-		(shape output)
-		(at 121.92 144.78 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "80e0b372-bb67-48f5-879f-f9180a2f99a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4281 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "RX"
-		(shape bidirectional)
-		(at 121.92 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "86635c55-f58c-4219-bf59-0917999727db")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.683 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "col5"
 		(shape input)
 		(at 125.73 17.78 90)
@@ -6711,30 +5838,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-	)
-	(global_label "UART_B"
-		(shape bidirectional)
-		(at 25.4 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "879f888c-9f11-4d17-86fd-e736a6df4666")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.2222 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -6807,7 +5910,7 @@
 			)
 		)
 	)
-	(global_label "TX"
+	(global_label "led"
 		(shape output)
 		(at 137.16 170.18 0)
 		(fields_autoplaced yes)
@@ -6819,7 +5922,7 @@
 		)
 		(uuid "9462ae22-4e7f-462a-824e-86cf308ddca1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.6681 170.18 0)
+			(at 142.3938 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6970,7 +6073,7 @@
 			)
 		)
 	)
-	(global_label "UART_A"
+	(global_label "data"
 		(shape bidirectional)
 		(at 25.4 130.81 180)
 		(fields_autoplaced yes)
@@ -6982,7 +6085,7 @@
 		)
 		(uuid "a97155b3-dbbb-46e8-8640-6ad63308a3e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.4036 130.81 0)
+			(at 17.9438 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7043,7 +6146,7 @@
 	)
 	(global_label "VCC"
 		(shape bidirectional)
-		(at 101.6 120.65 0)
+		(at 99.06 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7053,31 +6156,7 @@
 		)
 		(uuid "cc8af508-be62-413b-8969-82d3d29ff32d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5528 120.5706 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "RX"
-		(shape bidirectional)
-		(at 121.92 140.97 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ccb37a9a-be85-495f-9649-d353a9b7acc8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.683 140.97 0)
+			(at 105.0128 124.3806 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7343,7 +6422,7 @@
 			)
 		)
 	)
-	(global_label "RX"
+	(global_label "data"
 		(shape bidirectional)
 		(at 137.16 172.72 0)
 		(fields_autoplaced yes)
@@ -7355,7 +6434,7 @@
 		)
 		(uuid "f8f6e65d-70e9-4022-98b8-a0f0810215e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.923 172.72 0)
+			(at 144.6162 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7387,30 +6466,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-	)
-	(global_label "TX"
-		(shape output)
-		(at 121.92 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fe12a343-87b5-4a31-9382-f3c7ef528612")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4281 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -7450,7 +6505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "hillside_basic:SW_SPST_SKQG_WithStem"
+		(property "Footprint" "hillside:SW_Push_1P1T_NO_CK_KMR2"
 			(at 146.05 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -7686,99 +6741,6 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Via")
-		(at 240.03 40.64 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000615e1c4e")
-		(property "Reference" "V2"
-			(at 240.03 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Value" "Via"
-			(at 233.68 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-			)
-		)
-		(property "Footprint" "hillside_basic:VIA-0.8mm"
-			(at 237.49 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 240.03 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c1dbaaae-23f6-44fb-bee9-acc7bb52b326")
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "V2")
 					(unit 1)
 				)
 			)
@@ -8716,7 +7678,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hillside:pg1350-R_hotswap"
 			(at 22.86 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8797,7 +7759,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hillside:pg1350-R_hotswap"
 			(at 40.64 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -9364,7 +8326,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hillside:pg1350-R_hotswap"
 			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -9445,7 +8407,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hillside:pg1350-R_hotswap"
 			(at 86.36 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -10692,7 +9654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "hillside_basic:SW_SPDT_JS202011AQN"
+		(property "Footprint" "hillside:SW_SPDT_Shouhan_MSK12C02"
 			(at 55.88 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -11963,111 +10925,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 114.3 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "02375103-29d0-47e5-a65d-f38e370d5dc2")
-		(property "Reference" "JP4"
-			(at 114.3 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 114.3 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 114.3 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
-			(at 114.3 146.05 0)
-			(hide yes)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
-			(at 114.3 148.59 0)
-			(hide yes)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fe88493a-91c1-4b94-986e-5e63df535705")
-		)
-		(pin "2"
-			(uuid "3207054a-760c-4e31-a54e-44e259c0b392")
-		)
-		(pin "3"
-			(uuid "9e48a6bc-cc69-4bc3-9417-83a8a737bdd5")
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "JP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 30.48 59.69 270)
 		(unit 1)
@@ -12280,95 +11137,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 229.235 114.935 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0df7b3a0-28d5-4db7-a460-d6563ab75b0e")
-		(property "Reference" "H24"
-			(at 243.205 114.935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ToolingHole"
-			(at 231.775 114.935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside_basic:ToolingHole_1.152mm"
-			(at 229.235 114.935 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.235 114.935 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.235 114.935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 229.235 114.935 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 22.86 147.32 0)
 		(unit 1)
@@ -12443,6 +11211,101 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:USB_C_Receptacle_PowerOnly_6P")
+		(at 83.82 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "115dca3c-71e4-4a68-9adb-f976bde4f171")
+		(property "Reference" "J2"
+			(at 83.82 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_C_Receptacle_PowerOnly_6P"
+			(at 83.82 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hillside:USB_C_Receptacle_GCT_USB4125-xx-x-0190_6P_TopMnt_Horizontal"
+			(at 87.63 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 83.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB Power-Only 6P Type-C Receptacle connector"
+			(at 83.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B5"
+			(uuid "0bc13ce3-791b-4da1-ba2b-f029554684da")
+		)
+		(pin "A12"
+			(uuid "7e8a004d-600c-43f9-bc11-d4bec217db29")
+		)
+		(pin "A5"
+			(uuid "108de0f1-cd7d-4d2b-921e-4728c583e66b")
+		)
+		(pin "A9"
+			(uuid "04de7909-bf55-43af-98f8-826622b1d4d6")
+		)
+		(pin "B9"
+			(uuid "a39740d6-33b9-4c17-ad99-34a9006765be")
+		)
+		(pin "B12"
+			(uuid "beb19221-88bf-4545-a1b1-21766b8742a6")
+		)
+		(pin "SH"
+			(uuid "8aa9ba70-751d-4b79-b637-af42875b4967")
+		)
+		(instances
+			(project "hillside46"
+				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12642,96 +11505,6 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "V1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fe157c0-a605-4909-bf61-34ff7a3f7582")
-		(property "Reference" "H11"
-			(at 241.3 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H11")
 					(unit 1)
 				)
 			)
@@ -13236,455 +12009,6 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "D18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 104.775 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3ead6082-34de-49dd-b330-9772b68945ab")
-		(property "Reference" "H14"
-			(at 241.3 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 107.315 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 85.725 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41072dfc-8ea2-48df-a3aa-8bbf92a7a778")
-		(property "Reference" "H8"
-			(at 241.3 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 88.265 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 85.725 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 85.725 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4fc256ef-dc1b-45bb-927c-7c51f692971f")
-		(property "Reference" "H19"
-			(at 260.985 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "566653c3-8e65-4de9-8964-65d41f87dbb4")
-		(property "Reference" "H21"
-			(at 260.985 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6099af67-8ca5-4701-9c03-224bf3da1a22")
-		(property "Reference" "H17"
-			(at 260.985 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H17")
 					(unit 1)
 				)
 			)
@@ -14722,365 +13046,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 249.555 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "98a0da62-a653-469e-aeb4-ea92e8a7765d")
-		(property "Reference" "H23"
-			(at 263.525 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ToolingHole"
-			(at 252.095 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside_basic:ToolingHole_1.152mm"
-			(at 249.555 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 249.555 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 249.555 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 249.555 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99c58cd7-a05f-45ed-87db-813dc6dd8dd8")
-		(property "Reference" "H9"
-			(at 241.3 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a71886e-a0db-4c0c-b8ac-b05b99e0ee4e")
-		(property "Reference" "H2"
-			(at 241.3 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 85.725 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c2bb15e-5773-4666-8fa3-acab086a29df")
-		(property "Reference" "H16"
-			(at 260.985 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 88.265 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 85.725 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 85.725 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 85.725 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 184.15 91.44 270)
 		(unit 1)
@@ -15181,96 +13146,6 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "D28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 98.425 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8959f8d-d110-4a99-9e8d-b1b0e6ed104e")
-		(property "Reference" "H20"
-			(at 260.985 98.425 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 98.425 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 100.965 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 98.425 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 98.425 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 98.425 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H20")
 					(unit 1)
 				)
 			)
@@ -15505,96 +13380,6 @@
 		)
 	)
 	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 92.075 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afe63630-9920-43e1-96f3-03aeb422e975")
-		(property "Reference" "H10"
-			(at 241.3 92.075 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 92.075 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 94.615 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 92.075 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 92.075 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 92.075 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 140.97 24.13 270)
 		(unit 1)
@@ -15782,98 +13567,8 @@
 		)
 	)
 	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 104.775 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c58754b4-13ec-4aac-912c-a5339795ae00")
-		(property "Reference" "H22"
-			(at 260.985 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 107.315 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 86.36 158.75 0)
+		(at 83.82 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15883,7 +13578,7 @@
 		(dnp no)
 		(uuid "cfa1843d-2dd2-435d-a4de-dd979aff33d3")
 		(property "Reference" "#PWR013"
-			(at 86.36 165.1 0)
+			(at 83.82 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15896,7 +13591,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 162.56 0)
+			(at 83.82 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15908,7 +13603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 158.75 0)
+			(at 83.82 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15919,7 +13614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 158.75 0)
+			(at 83.82 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15930,7 +13625,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 158.75 0)
+			(at 83.82 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16374,7 +14069,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 158.75 0)
+		(at 76.2 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16384,7 +14079,7 @@
 		(dnp no)
 		(uuid "e0da265a-105c-4e35-9b28-44b7552cd5d9")
 		(property "Reference" "#PWR012"
-			(at 78.74 165.1 0)
+			(at 76.2 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16397,7 +14092,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 162.56 0)
+			(at 76.2 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16409,7 +14104,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 158.75 0)
+			(at 76.2 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16420,7 +14115,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 158.75 0)
+			(at 76.2 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16431,7 +14126,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 158.75 0)
+			(at 76.2 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16447,96 +14142,6 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 92.075 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8943649-c5c7-4d1d-8bb0-4068fa43a56a")
-		(property "Reference" "H18"
-			(at 260.985 92.075 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 92.075 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 94.615 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 92.075 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 92.075 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 92.075 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H18")
 					(unit 1)
 				)
 			)
@@ -16755,111 +14360,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 114.3 140.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "eb42b26e-5dfc-452c-a8a3-2e24da900a62")
-		(property "Reference" "JP3"
-			(at 114.3 138.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 114.3 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 114.3 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
-			(at 114.3 158.75 0)
-			(hide yes)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
-			(at 114.3 161.29 0)
-			(hide yes)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1b67e4a5-3990-47c1-b478-fb2aa9e56ce9")
-		)
-		(pin "1"
-			(uuid "68172d7d-3e70-4f40-bca6-c9b118f298b4")
-		)
-		(pin "3"
-			(uuid "e407eb99-1a51-4cb2-9804-bff25f99de0f")
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "JP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 119.38 66.04 270)
 		(unit 1)
@@ -16966,275 +14466,6 @@
 		)
 	)
 	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 250.825 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5eb3bb7-fa27-42da-aa86-cadc9d2f0da2")
-		(property "Reference" "H15"
-			(at 260.985 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 252.095 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 250.825 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.825 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.825 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 250.825 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 98.425 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f73e6739-fade-44ce-b61f-4b796703b733")
-		(property "Reference" "H12"
-			(at 241.3 98.425 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 98.425 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 100.965 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 98.425 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 98.425 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 98.425 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hillside_basic:Bumpon")
-		(at 231.14 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f90caa5f-5f42-45ad-a609-2978101a199b")
-		(property "Reference" "H13"
-			(at 241.3 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bumpon"
-			(at 232.41 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.0938)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "hillside:Bumpon"
-			(at 231.14 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Config" "do not fit"
-			(at 231.14 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "H13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 72.39 38.1 270)
 		(unit 1)
@@ -17335,131 +14566,6 @@
 			(project "hillside46"
 				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
 					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
-		(at 86.36 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb00f608-793e-4590-805c-ba32c0efa07a")
-		(property "Reference" "J2"
-			(at 86.36 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 86.36 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm"
-			(at 90.17 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 90.17 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
-			(at 86.36 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "A8"
-			(uuid "4934c11d-dc3f-455a-a581-d85f18a5f190")
-		)
-		(pin "A6"
-			(uuid "edb23615-7b8f-4b65-ad32-527d8dfb42bc")
-		)
-		(pin "A5"
-			(uuid "a2ee96c0-971c-43d2-a41b-913c33b47786")
-		)
-		(pin "A9"
-			(uuid "41c1584f-a190-4ce4-ba8e-fe604857a053")
-		)
-		(pin "A12"
-			(uuid "8f9188b1-ccbc-4b7f-ad63-16c15d77518c")
-		)
-		(pin "A4"
-			(uuid "9588ef3c-ea42-48b8-be84-23f1e8e0bbfc")
-		)
-		(pin "A7"
-			(uuid "18c1b759-7c56-4f89-9c36-5ff35c85c6f2")
-		)
-		(pin "B9"
-			(uuid "2d9175f3-fea4-4f69-adb4-7bd5e4339482")
-		)
-		(pin "B7"
-			(uuid "95ae07e6-d0f4-4ead-baa4-d98399ee58d8")
-		)
-		(pin "B8"
-			(uuid "e2faf3bf-e018-440b-b391-3390a3efd97d")
-		)
-		(pin "B1"
-			(uuid "acdef7b2-df32-4ff9-a440-45eb269e374e")
-		)
-		(pin "B4"
-			(uuid "9749194c-dba6-49a0-bdb3-306a84bc8467")
-		)
-		(pin "B5"
-			(uuid "d096713b-85c1-452c-bbb5-152d996a85bc")
-		)
-		(pin "B12"
-			(uuid "8efc7f71-4b05-4ef8-9255-b26921373db2")
-		)
-		(pin "B6"
-			(uuid "dfcee651-bc46-474b-b740-02fd6cde9635")
-		)
-		(pin "A1"
-			(uuid "cb6034ad-2c53-4598-9c6f-35c752c39808")
-		)
-		(pin "SH"
-			(uuid "6b621827-92a5-47b4-a7b9-e2e5ae2d12a5")
-		)
-		(instances
-			(project "hillside46"
-				(path "/060e7195-8501-4e09-8c43-1c823c24812a"
-					(reference "J2")
 					(unit 1)
 				)
 			)
